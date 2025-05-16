@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Buddy Central</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Study Buddy Central</h1>
+        <p>Your friendly place for motivation, tips, and fun study breaks!</p>
+    </header>
+
+    <main>
+        <!-- Event Handling Section -->
+        <section id="event-handling">
+            <h2>Interactive Study Tips</h2>
+            <button id="tip-button">Get a Study Tip!</button>
+            <p id="tip-display">Click the button to see a tip.</p>
+
+            <div id="hover-area">Hover over me for motivation!</div>
+
+            <input type="text" id="focus-input" placeholder="Type your study goal here..." />
+            <p>You’re aiming to: <span id="goal-display"></span></p>
+
+            <button id="secret-button">Double-click me for a surprise!</button>
+        </section>
+
+        <!-- Interactive Elements Section -->
+        <section id="interactive-elements">
+            <h2>Study Break Gallery</h2>
+
+            <div id="image-gallery">
+                <img src="study1.jpg" alt="Cozy study setup" class="gallery-image active" />
+                <img src="study2.jpg" alt="Books and coffee" class="gallery-image" />
+                <img src="study3.jpg" alt="Sunny study spot" class="gallery-image" />
+                <div class="gallery-controls">
+                    <button id="prev-image">Previous</button>
+                    <button id="next-image">Next</button>
+                </div>
+            </div>
+
+            <div id="accordion">
+                <h3>Quick Study Boosts</h3>
+                <div class="accordion-item">
+                    <button class="accordion-button">Pomodoro Technique</button>
+                    <div class="accordion-content">
+                        <p>Work for 25 minutes, then take a 5-minute break. Repeat 4 times, then take a longer break.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Active Recall</button>
+                    <div class="accordion-content">
+                        <p>Test yourself regularly instead of just rereading notes to boost memory.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-button">Healthy Snacks</button>
+                    <div class="accordion-content">
+                        <p>Fuel your brain with nuts, fruits, or dark chocolate during study breaks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button id="animate-button">Spin Me for Energy!</button>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Join Our Study Group</h2>
+            <form id="signup-form">
+                <label for="name-field">Full Name (required):</label>
+                <input type="text" id="name-field" required />
+                <span class="error-message" id="name-error"></span>
+
+                <label for="email-field">Email Address:</label>
+                <input type="email" id="email-field" />
+                <span class="error-message" id="email-error"></span>
+
+                <label for="password-field">Create Password (min 8 chars):</label>
+                <input type="password" id="password-field" />
+                <span class="error-message" id="password-error"></span>
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Study Partner Global</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
